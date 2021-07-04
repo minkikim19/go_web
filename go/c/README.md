@@ -29,4 +29,5 @@ html - 블록 레벨 요소와 인라인 요소
     <!-- 경로를 기준으로 잡음 / title아래에 위치하는게 좋음. / 한번밖에 사용 못함 / 전역에 영향을 끼침 -->
     <base href="./css/">
     <link rel="stylesheet" href="main.css">
+![image](https://user-images.githubusercontent.com/66135779/124381299-b3b84780-dcfc-11eb-8f33-4fdf67fa1970.png)
 
