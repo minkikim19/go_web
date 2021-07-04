@@ -20,13 +20,13 @@ html - 블록 레벨 요소와 인라인 요소
 
 
 
-<meta name="author" content="test">
-<meta name="description" content="test site">
+    <meta name="author" content="test">
+    <meta name="description" content="test site">
 
-<!-- 인터넷 익스플로어에서 어떻게 표현될지에 관한 설명 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 인터넷 익스플로어에서 어떻게 표현될지에 관한 설명 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- 경로를 기준으로 잡음 / title아래에 위치하는게 좋음. / 한번밖에 사용 못함 / 전역에 영향을 끼침 -->
-<base href="./css/">
-<link rel="stylesheet" href="main.css">
+    <!-- 경로를 기준으로 잡음 / title아래에 위치하는게 좋음. / 한번밖에 사용 못함 / 전역에 영향을 끼침 -->
+    <base href="./css/">
+    <link rel="stylesheet" href="main.css">
 
