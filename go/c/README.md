@@ -91,3 +91,71 @@ pre
 blockquote
 	일반적인 인용문을 설정
 	cite 속성 url 값을 입력
+
+a
+	download / href / hreflang / rel / target / type
+	<a href="./README.md" download>README.md</a> 이렇게 되어 있을경우 readme를 클릭하면 파일이 다운로드 된다. / 그냥 작성했을 경우 새로운 탭에 열린다
+
+	다른 페이지, 같은 페이지 위치(#, 해시 태그), 파일, 이메일 주소, 전화번호 등 다른 url로 연결할 수 있는 하이퍼링크를 설정.
+
+	* 같은 페이지 내에서 이동
+	<a href="#title1"> title1 </a> 
+	<h2 id="title1"> title1 </h2>
+
+
+abbr
+	약어를 지정 (abbreviation) / title 속성 사용
+
+b
+	문체가 다른 글자의 범위를 설정
+	읽기 흐름에 도움을 주는 용도로 사용 (css를 사용할 수 없을 때 사용)
+
+mark
+	사용자의 관심을 끌기 위한 하이라이팅할 때 사용 (css를 사용할 수 없을 때 사용)
+
+em
+	단순한 의미 강조를 표시 / 중첩이 가능(중첩될 수록 강조 의미가 강해짐) / 기본적으로 이탤릭체로 표시됨
+
+strong
+	의미의 중요성을 나타내기 위해 사용 / 기본적으로 bold 표시
+
+i
+	위에서 나온 태그중 적합한 의미가 아닌 경우 사용(아이콘이나 특수기호를 사용할 때)
+
+
+dfn
+	용어를 정의할 때 사용(definition)
+
+cite
+	창작물에 대한 참조를 설정 (책, 논문, 영화, tv프로그램, 노래, 게임등의 제목) / 기본적으로 italic type으로 표시됨.
+
+q
+	짧은 인용문을 설정 (inline quotation) / 긴 인용문일경우 blockquote를 사용. / cite 속성 (인용된 정보의 url)
+
+u
+	밑줄이 있는 글자를 설정 (하지만 css로 커버가능)
+
+code
+	컴퓨터 코드 범위를 설정(inline code) / monospace글꼴 계열로 표시됨
+
+kdb
+	텍스트 입력 장치(키보드)에서 사용자 입력을 나타내는 텍스트 범위를 설정 (keyboard input)
+
+sup, sub
+	위 첨자(sup), 아래 첨자(sub)
+
+time
+	날짜나 시간을 나타내기 위한 목적으로 사용 / ie에서 사용불가
+
+span
+	본질적으로 아무것도 나타내지 않는 콘텐츠 영역을 설정
+
+br /
+	줄바꿈을 설정 / 간격을 만들어내는 용도로 사용해서는 절대 안된다.
+
+del
+	삭제된(변경된) 텍스트의 범위를 지정 / cite, datetime 속성을 사용
+ins
+	새로 추가된(변경된) 텍스트의 범위를 지정 / cite, datetime 속성을 사용
+
+# tag가 가지는 의미에 집중하자
