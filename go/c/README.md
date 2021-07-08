@@ -159,3 +159,87 @@ ins
 	새로 추가된(변경된) 텍스트의 범위를 지정 / cite, datetime 속성을 사용
 
 # tag가 가지는 의미에 집중하자
+
+img
+	width든 height든 px단위가 아닌 숫자로만 가로와세로 사이즈를 같이 변경할 수 있다.
+				고정된 이미지 사용할 때
+				width = "400"
+				해상도가 변경됨에 따라 고정된 이미지의 해상도를 바꿀 수 있디.
+
+	srcset - 브라우저에게 제시할 이미지 url과 원본 크기의 목록의 정의
+				px 단위가 아닌 w 단위(이미지의 원본 크기 '가로 너비') 혹은 x 단위(이미지의 비율, 의도 <일반적으로 w사용> )를 입력, 작은 크기 이미지부터 순서대로 입력
+	
+	sizes - 미디어 조건과 해당 조건일 때 이미지 '최적화' 크기의 목록을 정의
+				최적화 할 때 사용.
+				sizes = "(min-width: 1000px) 700px " 가로가 1000px이 넘었을 경우 700px 사용
+
+	width는 이미지의 출력크기
+	sizes는 이미지의 출력 크기 + 최적 크기
+
+audio
+	autoplay - 준비되면 바로 재생
+	controls - 제어 메뉴를 표시
+	loop - 재생이 끝나면 다시 처음부터 재생
+	preload - 페이지가 로드될 때 파일을 로드할지의 지정(힌트 제공)
+	src - 콘텐츠 url
+	muted - 음소거 여부
+
+
+video
+	동영상 콘텐츠(.mp4)를 삽입
+	autoplay - 준비되면 바로 재생
+	controls - 제어 메뉴를 표시
+	crossorigin - 가져 오기가 CORS를 사용하여 수행되어야하는지 여부
+	loop
+	muted
+	poster - 동영상 섬네일 이미지 url
+	preload - (위와 동일)
+	src - 콘텐츠 url
+	width - 동영상 가로 너비
+	height - 동영상 세로 너비
+
+ figure
+	이미지나 삽화, 도표 등의 영역을 설정
+	이미지와 설명을 쓰고 싶을 때
+
+	figure
+		img src = " "
+		figcaption ~에 관한 이미지 입니다. /figcaption 
+	/figure
+
+ figcaption
+	figure에 포함되어 이미지나 삽화 등의 설명을 표시
+
+
+
+iframe
+	다른 html 페이지를 현재 페이지에 삽입
+	src - 포함할 문서의 url
+	width
+	height
+	style
+	allowfullscreen - 전체 화면 모드 사용 여부
+	frameborder - 프레임 테두리 사용 여부
+	sandbox - 보안을 위한 읽기 전용으로 삽입
+
+
+canvas
+	canvas api이나 webgl api를 사용하여 그래픽이나 애니메이션을 랜더링.
+	(픽셀단위는 적지 않아도 됨. 자바스크립트를 사용해야함.)
+	width
+	height
+
+script
+	스크립트 코드를 문서에 포함하거나 참조.(외부 스크립트)
+	async - 스크립트의 비동기적(asynchronously) 실행 여부 //순차적 - 동기, 비순차적 - 비동기
+	crossorigin - 
+	defer - 문서 파싱(구문 분석) 후 작동 여부
+		스크립트 파일의 위치에 따라서 작동이 제대로 되는 경우와 아닌 경우가 있다.
+		하지만 이 속성을 사용하면 html파일을 전체적으로 실행후 자바를 실행하기 때문에 괜찮다.
+
+	src - 참조할 외부 스크립트 url // 포함된 스크립트 코드는 무시됨(src로 스크립트를 불러왔을때 기존에 작성되었던 스크립트는 무시되어 실행되지 않는다.)
+	type - text/javascript'
+
+
+noscript
+	자바 스크립트가 실행되지 않는 환경에서 표시되는 html을 정의
