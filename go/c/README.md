@@ -243,3 +243,136 @@ script
 
 noscript
 	자바 스크립트가 실행되지 않는 환경에서 표시되는 html을 정의
+
+
+
+
+
+테이블
+
+ table tr th td
+	데이터 표<table>의 행<tr> 열<th><td> 을 생성
+
+ th
+	머리글 칸을 지정
+	abbr - 열에 대한 간단한 설명
+	headers - 관련된 하나 이상의 다른 머리글 칸 id 속성 값
+	colspan - 확장하려는 열의 수
+	rowspan - 확장하려는 행의 수
+	scope - 자신이 누구의 머리글 칸인지 명시
+ 
+ td
+	일반 칸을 지정
+	headers - 관련된 하나 이상의 다른 머리글 칸 id 속성 값
+	colspan 확장하려는 열의 수
+	rowspan 확장하려는 행의 수
+
+ caption
+	표의 제목을 설정
+	열리는 table 태그 바로 다음에 작성해야 함.
+	table 당 하나의 caption만 사용 가능
+
+ colgroup col
+	표의 열들을 공통적으로 정의하는 컬럼<col>과 그의 집합 <colgroup>
+	col 부분에만 style을 적용시키고 싶을 떄 사용한다.
+	span - 연속되는 열 수(그 옆 줄도 적용 시킬 수 있다)
+
+ thead tbody tfoot
+	표의 머리글<thead> 본문<tbody> 바닥글<tfoot>을 지정
+
+
+양식
+ form
+	웹 서버에 정보를 제출하기 위한 양식 범위를 정의
+	*action - 전송한 정보를 처리할 웹페이지의 url
+	autocomplete - 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부
+	* method - 서버로 전송할 http 방식
+	* name - 고유한 양식의 이름
+	novaildate - 서버로 전송시 양식 데이터의 유효성을 검사하지 않도록 지정
+	target - 서버로 전송 후 응답받을 방식을 지정
+
+ input /
+	사용자에게 입력 받을 데이터 양식
+	autocomplete
+	autofocus - 페이지가 로드될 때 자동으로 포커스
+	checked - 양식이 선택되었음을 표시
+	disabled - 양식을 비활성화
+	form - form의 id속성 값
+	list - 참조할 datalist의 id속성 값
+	max - 지정 가능한 최대 값
+	min - 지정 가능한 최소 값
+	maxlength - 입력 가능한 최대 문자 수
+	muliple - 둘 이상의 값을 입력 할 수 있는지 여부(여러개의 파일을 입력받을 경우)
+	* name - 양식의 이름
+	placeholder - 사용자가 입력할 값의 힌트
+	readonly - 수정 불가한 읽기 전용
+	step - 유효한 증감 숫자의 간격
+	src - 이미지의 url
+	alt - 이미지의 대체 텍스트
+	* type - 입력 받을 데이터의 종류
+	* value - 양식의 초기 값
+
+데이터 type의 value
+	button - 일반 버튼
+	checkbox - 
+	color
+	email
+	file
+	hidden
+	image - 제출버튼으로 활용해서 클릭할 수 있다.
+	number
+	password
+	radio
+	range
+	reset
+	search
+	submit
+	tel
+	text
+	url
+
+
+ label
+	라벨 가능 요소의 제목
+	for 속성으로 라벨 가능 요소를 참조하거나 콘텐츠로 포함
+	라벨 가능 요소 button input progress select textarea
+	텍스트를 눌러도 체크됨
+
+ button
+	선택 가능한 버튼을 지정
+	autofocus
+	disabled
+	form - form 의 id연결
+	name - 폼 데이터와 함께 전송되는 버튼의 이름
+	type - button, reset, submit
+
+ textarea
+	여러 줄의 일반 텍스트 양식
+	rows - 양식의 줄 수
+
+ fieldset legend
+	같은 목적의 양식을 그룹화<fieldset> 하여 제목<legend>을 지정
+	disabled
+	form
+	name
+
+
+ select datalist optagroup option
+	옵션<option>, <optgroup>의 선택 메뉴<select>나 자동완성<datalist>을 제공
+
+ select
+	옵션을 선택하는 메뉴
+	<select> <option> </option> </select> 
+
+ optgroup
+	option을 그룹화
+	label로 분리시켜 제목을 적을 수 있다.
+
+ option
+	선택 메뉴<select> '선택 되어 있는 상태' 나 자동완성<datalist>'option에 있는 datalist를 ' input에서 자동 완성되어 사용 가능.
+
+ progress
+	작업의 완료 진행률을 표시
+	max - 작업의 총량
+	value - 작업의 진행량
+
