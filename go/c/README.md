@@ -376,3 +376,68 @@ noscript
 	max - 작업의 총량
 	value - 작업의 진행량
 
+
+전역속성
+	모든 html 요소에서 공통적으로 사용 가능한 속성
+
+ class
+	공백으로 구분된 요소의 별칭을 지정
+	css혹은 javascript의 요소 선택기를 통해서 요소를 선택하거나 접근
+
+ id
+	문서에서 고유한 식별자를 정의
+	css혹은 javascript의 요소 선택기를 통해서 요소를 선택하거나 접근
+
+ style
+	요소에 적용할 css를 적용
+
+ title
+	요소의 정보(설명)을 지침
+
+  lang
+	요소의 언어를 지정
+
+ data-* ex. data-my-age
+	사용자가 정의 데이터 속성을 지정
+	html에 javascript에서 이용할 수 있는 데이터(정보)를 저장하는 용도로 사용
+
+ draggable
+	요소가 Drag and drop api를 사용 가능한지 여부를 지정
+
+ hidden
+	요소를 숨김
+
+ tabindex
+	tab키를 이용해 요소를 순차적으로 포커스 탐색할 순서를 지정.
+	대화형 콘텐츠(interactive content)는 기본적으로 코드 순서대로 탭 순서가 지정됨.
+
+	비대화형 콘텐츠에 tabindex="0"을 지정하여 대화형 콘텐츠와 같이 탭 순서를 사용.
+
+	tabindex="-1"을 통해 포커스는 가능하지만 탭 순서에서 제외 가능
+	tabindex="1" 이상의 양수 값은 논리적 흐름을 방해하기 때문에 추천하지 않음.
+
+ 상대경로
+	선택한 파일 기준으로 경로를 찾는다.
+	./
+	../
+
+ 절대경로
+	전체적인 경로를 나타낸다.
+	http
+	/
+
+주석
+ <!--  -->
+
+특수 기호
+& n b s p;
+& l t; 
+& g t;
+
+emmet 문법
+	.box 는 div class box를 create
+	ul.list는 ul class list를 create
+	.container>ul.list>li.list-item*10>a{list$}
+
+
+	css에서는 h:100 w:100
