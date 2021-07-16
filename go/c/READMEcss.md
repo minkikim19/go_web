@@ -237,3 +237,136 @@ css 단위
   뷰포트 너비 또는 높이를 기준으로 하는 최대 값입니다.
   더 넓은 쪽의 백분율
 
+
+
+width
+  요소의 가로 너비를 지정
+
+ 속성 값
+  값 : auto 단위
+  의미 : 브라우저가 너비를 계산 px, em, cm등 단위로 지정
+  기본값 auto
+
+height
+  요소의 세로 너비를 지정
+
+ 속성 값
+ 값 : auto 단위
+ 의미 : 브라우저가 너비를 계산 px, em, cm등 단위로 지정
+ 기본값 : auto
+
+max-width
+  요소의 최대 가로 너비를 지정 최대를 제한
+ 
+ 속성 값
+ 값 : 단위 auto
+ 의미: px, em, % 등 단위로 지정 브라우저가 너비를 계산
+ 기본값 : none
+
+min-width
+  요소의 최소 가로 너비를 지정 최소를 제한
+
+ 속성 값
+ 값 : 단위 auto
+ 의미 : px, em, %등 단위로 지정 브라우저가 너비를 계산
+ 기본값 : 0
+
+max-height
+  요소의 최대 세로 너비를 지정 최대를 제한
+
+ 속성 값
+ 위와 동일
+
+min-height
+  요소의 최소 가로 너비를 지정 최소를 제한
+ 속성 값
+ 위와 동일
+
+
+margin
+  요소의 '외부(바깥) 여백'을 지정 (음수 값을 사용가능)
+
+ 속성 값
+ 의미 : px, em, cm등 단위로 지정 - 단위 - 기본값 : 0
+      브라우저가 너비를 계산 - auto 
+      부모 요소의 너비에 대한 비율로 지정 - %
+
+ margin : 위 우 아래 좌;
+ margin : 위 [좌, 우] 아래 ;
+ margin : [위, 아래] [좌, 우];
+ margin : [위, 아래, 좌, 우]
+
+ margin-top
+ margin-bottm
+ margin-left
+ margin-right
+
+
+
+마진 중복(병합, collapse)
+  마진의 특정 값들이 '중복'되어 합쳐지는 현상
+
+  1. 형제 요소들의 margin-top과 margin-bottom이 만났을 때
+  2. 부모 요소의 margin-top과 자식 요소의 margin-top이 만났을 때
+  3. 부모 요소의 margin-bottom과 자식 요소의 margin-bottom이 만났을 때
+  | 마진 중복은 버그가 아닙니다. 현상을 우회하거나 응용할 수 있습니다.
+
+
+마진 중복 계산법
+ 마진 중복 현상이 발생시, 중복 값을 계산해내는 방법
+
+   둘 다 양수 일때 더 큰 값으로 중복
+   둘 다 음수 일때 더 작은 값으로 중복
+   각각 양수 음수일때 사칙연산으로 중복
+
+
+padding
+  요소의 '내부 여백'을 지정
+  padding [위, 아래, 좌, 우] 시계방향
+
+ 크기 증가
+   추가된 padding 값만큼 요소의 크기가 커지는 현상 (padding이 추가된 만큼 위아래, 2개의 padding이 증가한다고 생각해야함)
+
+   box-sizing: border-box를 추가하면 계산 하지 않고 만들 수 있다.
+
+border
+  요소의 '테두리 선'을 지정
+
+  border-width 선을 두께 medium
+  border-style 선의 종류 none
+   none, hidden, solid, dotted, dashed, double, groove, ridge, inset, outset
+
+  border-color 선의 색상 black
+   transparent(투명한 선)
+
+ border: 두께 종류 색상;
+  !!!!!*border은 두께 만큼 크기를 추가시켜줘야 한다
+  box-sizing: border-box;쓰면 괜찮음.
+
+ border-width: [위, 아래, 좌, 우]
+ border-style: solid dotted double inset;
+
+
+box-sizing
+  요소의 크기 계산 기준을 지정
+
+ content-box 너비만으로 요소의 크기를 계산
+ border-box width, height, padding, border를 포함하여 요소의 크기를 계산
+
+display
+  요소의 박스 타입을 설정
+
+ black, inline, inline-block(베이스는 인라인이지만 가로값과 세로값을 가질 수 있다.), 기타, none(화면에서 사라지는 기능을 할 때 많이 사용된다.)
+
+overflow
+  요소의 크기 이상으로 내용이 넘쳤을 때, 내용의 보여짐을 제어
+
+ visible(넘친 부분을 자르지 않고 그대로 보여줌)
+ hidden
+ scroll 넘친 부분을 잘라내고 스크롤바를 이용하여 볼 수 있도록 함
+ auto 자동으로 스크롤
+
+
+opacity
+  요소의 투명도를 지정
+ 0부터 1사이의 소수점 숫자
