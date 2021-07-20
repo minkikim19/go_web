@@ -370,3 +370,107 @@ overflow
 opacity
   요소의 투명도를 지정
  0부터 1사이의 소수점 숫자
+
+
+font
+  글자 관련 속성들을 지정
+ 
+ 속성 값
+ font-style - 글자 기울기 지정
+ font-weight - 글자 두께 지정
+ font-size - 글자 크기 지정
+ line-height - 줄 높이 지정
+ font-family - 글꼴 지정
+
+ font: 기울기 두께 크기 / 줄높이 글꼴; ('/'로 구분한다.)
+
+
+font-style
+ normal
+ italic
+
+font-weight
+ 글자 두께를 지정
+
+ normale - 400
+ bold - 700
+ boder - 상위요소보다 두껍게
+ bolder - 상위요소보다 얇게
+ 숫자 - 100~900 (100단위)
+
+font-sizr
+  글자의 크기를 지정
+
+line-height
+  줄 높이 지정
+
+  normal - 브라우저의 기본 정의를 사용(1~1.4)
+  숫자 - 요소 자체 글꼴 크기의 배수로 지정(이 방법을 사용하는 것을 추천 왜냐하면, 글꼴을 바꿨을 때 이것또한 바꿔야 하는 귀찮음을 없애줌 1.4~1.7추천)
+  단위 - px,em,cm
+  %
+
+
+font-family
+  글꼴 지정
+
+ 글꼴이름 - 글꼴 목록을 지정
+ seif
+ sans-serif
+ monospace
+ cursive
+ fantasy
+
+ font-family: [글꼴후보1, 글꼴후보2...], 글꼴계열;
+
+ 글꼴 계열
+  serif - 바탕
+  sans-serif - 고딕
+  monospace - 고정너비
+  cursive - 필기
+  fantasy - 장식
+
+
+문자 관련 속성
+ color
+
+ 색상 - 문자의 색상을 지정 - rgb(0,0,0)
+
+ 색상 표현
+  색상 이름 - 브라우저에서 제공하는 색상의 이름 - red, blue
+  hex 색상코드 - 16진수 색상
+  rgb
+  rgba
+  hsl - 색상, 채도, 명도
+  hsla - 색상, 채도, 명도, 투명도
+
+text-align
+ 문자 정렬 방식을 지정
+
+  left
+  right
+  center
+  justify - 양쪽 맞춤 (2줄 이상 br태그를 사용한게 아닌)
+
+text-decoration
+ 문자의 line을 설정
+  
+  none
+  underline
+  overline - 윗줄
+  line-through - 글을 가로지르는 선
+
+text-indent
+ (첫번째 줄의)들여쓰기를 지정 (음수 값 사용 할 경우 왼쪽으로 들여쓰기)
+  
+  화면 밖으로 내보내기 위해서 많이 사용된다.
+  text-indent: -9999px;
+
+letter-spacing
+ 글자 사이 간격을 설정
+
+ normal - 단어 사이의 일반 간격 - normal
+ 단위 - px, em, cm
+
+word-spacing
+ 단어 사이의 간격을 설정
+ 
