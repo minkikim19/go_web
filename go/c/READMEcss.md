@@ -473,4 +473,82 @@ letter-spacing
 
 word-spacing
  단어 사이의 간격을 설정
+
+
+
+float
+  요소를 좌우 방향으로 띄움
+
+ none
+ left
+ right - 우측에서 부터 쌓이기 시작함.
+
+ 
+float 해제
+  1. 형제요소에 clear: both;
+  2. 부모요소에 overflow: (hidden, auto) 비추천!
+  3. 부모요소에 clearfix 클래스 추가하여 해제 추천!
+
+ css에 clearfix를 미리 지정해 두고 html에 사용되는 곳에 class적기 .
+  .clearfix::after { content: ""; clear: both; display: block;}
+
+
+
+display 수정
+  float 속성이 추가된 요소는 display속성의 값이 대부분 block으로 수정됨
+
+  float: (left, right)는 display가 block로 변한다.
+   flex, inline-flex 빼고.
+
+
+clear
+  float속성이 적용되지 않도록 지정(해제)
+
+ none - 요소 띄움 허용
+ left
+ right
+ both - 양쪽 모두 띄움 해제
+
+
+
+position
+  요소의 위치 지정 방법의 유형을 설정
+
+ static - 유형 없음/ 배치 불가능
+ relative - 요소 자신을 기준으로 배치 -> 부모 css에 표기 / relative 하나만 사용하여 자신을 기준으로 배치하는것도 가능하다. 그러므로 주변에 영향을 주므로 주의해서 사용해야 한다.
+
+ absolute - 위치 상 부모 요소를 기준으로 배치 -> 자식 css에 표기 / 부모 요소에 position : xxx; 가 있어야지 그것을 기준으로 배치됨 ex) position: relative가 부모요소에 있다면 그것을 기준으로 position이 적용.
+
+ fixed - 브라우저를 기준으로 배치 / 스크롤 되더라도 고정되는 경우 사용.
+
+ sticky - 스크롤 영역을 기준으로 배치 / top, left, bottom, right중 하나를 입력해야 작동한다. / 마치 제목이 위에 고정되어 있다가 다른 제목이 나타나면 바뀌는 그러한 디자인을 보일 수 있다.
+
+ 
+ top
+  요소의 position 기준에 맞는 위쪽에서의 거리를 설정
+    auto
+    단위
+    %
+
+ bottom
+  요소의 position 기준에 맞는 아래쪽에서의 거리를 설정
+
+ left
+  요소의 position 기준에 맞는 왼쪽에서의 거리를 설정
+ 
+ bottom
+  오른쪽 거리 설정
+
+
+요소 쌓임 순서(stack order)
+  요소가 쌓여 있는 순서를 통해 어떤 요소가 사용자와 가깝게 있는지를 결정
+
+ 1. static을 제외한 position속성의 값이 있을 경우 가장 위에 쌓임
+ 2. position이 모두 존재한다면 z-index속성의 숫자 값이 높을 수록 위에 쌓임
+ 3. position속성의 값이 있고, z-index속성의 숫자 값이 같다면, html의 마지막 코드일 수록 위에 쌓임
+
+
+display수정
+  absolute, fixed 속성 값이 적용된 요소는 display속성의 값이 대부분 block으로 수정됨
+
  
